@@ -31,6 +31,7 @@ TypeError: a bytes-like object is required, not 'str'
             "select histogram from imhistograms where rowid='%d'" % im_id).fetchone()
         
         # use pickle to decode NumPy arrays from string
+        # 从return pickle.loads(str(s[0]))修改为：
         return pickle.loads(s[0])
    def candidates_from_histogram(self,imwords):
         """ Get list of images with similar words. """
@@ -46,6 +47,7 @@ TypeError: a bytes-like object is required, not 'str'
         
         # take all unique words and reverse sort on occurrence 
         tmp = [(w,candidates.count(w)) for w in set(candidates)]
+        # 从tmp.sort(cmp=lambda x,y:cmp(x[1],y[1]))修改为：
         tmp.sort(key=cmp_to_key(lambda x,y:operator.gt(x[1],y[1])))
         tmp.reverse()
         
