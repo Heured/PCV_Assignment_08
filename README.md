@@ -157,9 +157,12 @@ imagesearch.plot_results(src,res_geom[:8]) #重排后的结果
   
 结果：  
   
-![emmmm]()
-![emmmm]()
-![emmmm]()
+![emmmm](https://github.com/Heured/PCV_Assignment_08/blob/master/ImgToShow/3_03.PNG)  
+
+![emmmm](https://github.com/Heured/PCV_Assignment_08/blob/master/ImgToShow/3_01.png)  
+
+![emmmm](https://github.com/Heured/PCV_Assignment_08/blob/master/ImgToShow/3_02.png)  
+
 4.建立演示程序以及web应用
 
   
@@ -265,7 +268,8 @@ cherrypy.quickstart(SearchDemo(), '/', config=os.path.join(os.path.dirname(__fil
   
 结果：  
   
-![emmmm]()
+![emmmm](https://github.com/Heured/PCV_Assignment_08/blob/master/ImgToShow/5_01.PNG)  
+
 ### 遇到问题
   
   1.第三个文件test.py
