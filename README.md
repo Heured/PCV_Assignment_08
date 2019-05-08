@@ -81,3 +81,19 @@ TypeError: 'range' object does not support item assignment
   
   
  解决办法：  
+ ```python
+     def __init__(self):
+        # 载入图像列表
+        self.path = './data/'
+        #self.path = 'D:/python_web/isoutu/first500/'
+        self.imlist = [os.path.join(self.path,f) for f in os.listdir(self.path) if f.endswith('.jpg')]
+        #self.imlist = get_imlist('./first500/')
+        #self.imlist = get_imlist('E:/python/isoutu/first500/')
+        self.nbr_images = len(self.imlist)
+        print(self.imlist)
+        print(self.nbr_images)
+        #print(str(len(self.imlist))+"###############")
+        # 从self.ndx = range(self.nbr_images)修改为：
+        self.ndx = list(range(self.nbr_images))
+        print(self.ndx)
+ ```
