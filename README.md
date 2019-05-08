@@ -79,6 +79,8 @@ Traceback (most recent call last):
 TypeError: 'range' object does not support item assignment
  ```
   
+  原因：是python3中range不返回数组对象，而是返回range对象,加个声明为list的语句就行
+  
   
  解决办法：  
  ```python
