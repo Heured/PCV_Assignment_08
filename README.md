@@ -4,7 +4,7 @@
 
 ### 遇到问题
   
-  1.
+  1.第三个文件test.py
   ```python
   Traceback (most recent call last):
   File "D:/pyCharm/pycharm_workspace/2019_4_30_ShiJue/test.py", line 32, in <module>
