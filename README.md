@@ -54,5 +54,30 @@ TypeError: a bytes-like object is required, not 'str'
         # return sorted list, best matches first    
         return [w[0] for w in tmp] 
   ```
- 
-    
+ 2.第四个文件
+ ```python
+ [08/May/2019:18:29:56] ENGINE Listening for SIGTERM.
+[08/May/2019:18:29:56] ENGINE Bus STARTING
+[08/May/2019:18:29:56] ENGINE Set handler for console events.
+[08/May/2019:18:29:56] ENGINE Started monitor thread 'Autoreloader'.
+[08/May/2019:18:29:56] ENGINE Serving on http://127.0.0.1:8080
+[08/May/2019:18:29:56] ENGINE Bus STARTED
+[08/May/2019:18:30:00] HTTP 
+Traceback (most recent call last):
+  File "D:\Anaconda\Anaconda3_5.3.0\envs\no6py3\lib\site-packages\cherrypy\_cprequest.py", line 628, in respond
+    self._do_respond(path_info)
+  File "D:\Anaconda\Anaconda3_5.3.0\envs\no6py3\lib\site-packages\cherrypy\_cprequest.py", line 687, in _do_respond
+    response.body = self.handler()
+  File "D:\Anaconda\Anaconda3_5.3.0\envs\no6py3\lib\site-packages\cherrypy\lib\encoding.py", line 219, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "D:\Anaconda\Anaconda3_5.3.0\envs\no6py3\lib\site-packages\cherrypy\_cpdispatch.py", line 54, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "D:/pyCharm/pycharm_workspace/2019_4_30_ShiJue/show.py", line 72, in index
+    random.shuffle(self.ndx)
+  File "mtrand.pyx", line 4859, in mtrand.RandomState.shuffle
+  File "mtrand.pyx", line 4862, in mtrand.RandomState.shuffle
+TypeError: 'range' object does not support item assignment
+ ```
+  
+  
+ 解决办法：  
