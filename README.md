@@ -7,11 +7,11 @@ Image search
   矢量空间模型是一个用于表示和搜索文本文档的模型。该名字来源于用矢量来表示文本文档，这些矢量是由文本词频直方图构成的。矢量包含了每个单词出现的次数，而且在其他别的地方包含很多0元素，由于其忽略了单词出现的顺序及位置，该模型也被称为BOW表示模型。
   
   最常用的权重是tf(词频)，表示本单词在本文中出现的次数除以本文中单词的总数。  
-  ![emmmm]()  
+  ![emmmm](https://github.com/Heured/PCV_Assignment_08/blob/master/ImgToShow/CiPin.jpg)  
   
   
   idf(逆向文档频率):  
-  ![emmmm]()  
+  ![emmmm](https://github.com/Heured/PCV_Assignment_08/blob/master/ImgToShow/NiXiangwdpl.jpg)  
   其中|D|是在语料库D中文档的数目，分母是语料库中包含单词w的文档数d。将两者相乘可以得到矢量v中对应元素的tf-idf权重。  
   
 ### 视觉单词
